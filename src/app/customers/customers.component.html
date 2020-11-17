@@ -1,0 +1,20 @@
+<h2 class="center">Customers List</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Details</th>
+    </tr>
+    <tr *ngFor="let c of customers">
+        <td>{{c.id}}</td>
+        <td>{{c.firstName}}</td>
+        <td>{{c.lastName}}</td>
+        <td>{{c.address}}</td>
+        <td>{{c.phone}}</td>
+        <td><a href="/details/{{c.id}}">View</a></td>
+    </tr>
+</table>
